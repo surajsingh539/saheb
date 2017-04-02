@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:padding="5dp"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone No"
+            android:textColor="@color/cardview_dark_background"
+            android:inputType="text"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:padding="5dp"
+            android:hint="xx-xxxxx-xxxxx"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I have  "
+            android:textColor="@color/cardview_dark_background"
+            android:inputType="text"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/et_i_have"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:hint="Block and How many Tickets"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I want "
+            android:inputType="text"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/et_i_want"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:hint="Block and How many Tickets"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Match Venue"
+            android:inputType="text"
+            android:textSize="20sp"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sp_match"
+            ></Spinner>
+
+    </LinearLayout>
+    <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:gravity="right"
+         android:paddingRight="10dp"
+         android:layout_below="@id/linear_layout">
+         <Button
+             android:id="@+id/btnCancel"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Cancel"
+             android:layout_marginRight="20dp"
+             android:textStyle="bold"
+             android:textColor="#ffffff"/>
+         <Button
+             android:id="@+id/btnExchange"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Exchange"
+             android:background="#FF00A91F"
+             android:textStyle="bold"
+             android:textColor="#ffffff"/>
+     </LinearLayout>
+
+</RelativeLayout>

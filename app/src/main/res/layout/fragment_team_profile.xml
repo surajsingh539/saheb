@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.iplplay2win.app.team_profileFragment"
+    tools:showIn="@layout/activity_team_profile">
+<!--<android.support.v7.widget.CardView-->
+    <!--android:id="@+id/team_profile"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="200dip"-->
+    <!--app:cardCornerRadius="0dp"-->
+    <!--android:padding="16dip">-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:padding="16dip">-->
+        <!--<de.hdodenhof.circleimageview.CircleImageView-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:id="@+id/teamlogo"-->
+            <!--android:src="@color/colorPrimary" />-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--android:padding="8dip"-->
+            <!--android:gravity="center"-->
+            <!--&gt;-->
+        <!--<TextView-->
+            <!--android:id="@+id/teamname"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Kolkata Knight Riders"-->
+            <!--android:textSize="20sp"-->
+            <!--android:textColor="@color/kkr"-->
+            <!--android:typeface="serif" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/Stadium"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text=" Eden Gardens"-->
+                <!--android:drawableLeft="@drawable/ic_local_activity"-->
+                <!--android:textSize="16sp"-->
+                <!--android:typeface="monospace"-->
+                <!--android:textColor="@color/cardview_dark_background"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/teamowner"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text=" Owner"-->
+                <!--android:drawableLeft="@drawable/ic_owner"-->
+                <!--android:textSize="16sp"-->
+                <!--android:textColor="@color/cardview_dark_background"-->
+                <!--android:typeface="monospace"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/teamwebsite"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="   kkr.in"-->
+                <!--android:textColorLink="@color/cardview_dark_background"-->
+                <!--android:drawableLeft="@drawable/ic_link"-->
+                <!--android:textSize="16sp"-->
+                <!--android:autoLink="web"-->
+                <!--android:linksClickable="true"-->
+                <!--/>-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:weightSum="1"-->
+                <!--&gt;-->
+                <!--<Button-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="0.5"-->
+                    <!--android:text="Facebook"/>-->
+                <!--<Button-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="0.5"-->
+                    <!--android:text="Twitter"/>-->
+            <!--</LinearLayout>-->
+
+        <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+<!--</android.support.v7.widget.CardView>-->
+    <!--<TextView-->
+        <!--android:id="@+id/player_text"-->
+        <!--android:layout_below="@id/team_profile"-->
+        <!--android:padding="16dp"-->
+        <!--android:text="Players"-->
+        <!--android:textSize="20sp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+        <!--android:layout_below="@id/player_text"-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/players_list_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp">
+            <!--android:layout_below="@id/player_text"-->
+
+        </android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        >
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="“No copyright infringement intended” "
+            android:padding="2dip"
+            android:maxLines="2"
+            android:textSize="11sp"
+            android:textColor="@color/cardview_dark_background"
+            android:alpha="0.5"
+            />
+        <TextView
+            android:id="@+id/copyright"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="“Images displayed here are for reference only. Cited purely for non-commercial purposes. No copyright infringement intended.” "
+            android:padding="2dip"
+            android:maxLines="2"
+            android:textSize="11sp"
+            android:textColor="@color/cardview_dark_background"
+            android:alpha="0.5"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

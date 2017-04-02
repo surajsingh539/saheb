@@ -35,7 +35,7 @@ public class login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         loginButton=(LoginButton)findViewById(R.id.fb_login_btn);
         CardView loginfbbutton = (CardView)findViewById(R.id.logincardfacebook);
-
+/*hello*/
         loginfbbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
